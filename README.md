@@ -1,4 +1,7 @@
 # tduck部署
+### 前后端源码  
+git clone https://gitee.com/TDuckApp/tduck-platform.git  
+git clone https://gitee.com/TDuckApp/tduck-front.git
 ### docker环境安装
 source get-docker.sh  
 pip install docker-compose
