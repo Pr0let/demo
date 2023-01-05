@@ -22,10 +22,7 @@ RUN sed -i s@/deb.debian.org/@/mirrors.aliyun.com/@g /etc/apt/sources.list \
     && apt-get install -y supervisor nginx
 	
 
-COPY --from=build_end ./nginx.conf /etc/nginx/nginx.conf
 
-
-COPY --from=build_end ./supervisord.conf /etc/supervisord.conf
 
 
 COPY --from=build-front /app/dist/ /usr/share/nginx/html
