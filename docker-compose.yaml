@@ -48,6 +48,9 @@ services:
     command: --default-authentication-plugin=mysql_native_password
 
 volumes:
+- /home/admin/Desktop/tduck:/etc
+
+volumes:
   mysql_data3:
   nginx_log:
   redis_data:
