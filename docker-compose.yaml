@@ -10,7 +10,12 @@ services:
       - SPRING_REDIS_HOST=$REDIS_HOST
       - SPRING_REDIS_PORT=$REDIS_PORT
       - AJ_CAPTCHA_ENABLE=false
-
+      - MYSQL_DATABASE=tduck
+      - MYSQL_ROOT_PASSWORD=abc123123
+      - SPRING_DATASOURCE_URL=jdbc:mysql://tduck-mysql/tduck?serverTimezone=Asia/Shanghai
+      - SPRING_DATASOURCE_NAME=root
+      - REDIS_HOST=tduck-redis
+      - REDIS_PORT=6379
    
     image: "wbsu2003/tduck"
     ports:
