@@ -50,4 +50,7 @@ services:
 volumes:
 - /home/demo:/etc
 
-
+volumes:
+  mysql_data3:
+  nginx_log:
+  redis_data:
