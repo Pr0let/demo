@@ -48,6 +48,6 @@ services:
     command: --default-authentication-plugin=mysql_native_password
 
 volumes:
-- ~/demo:/etc
+- /home/demo:/etc
 
 
